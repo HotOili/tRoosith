@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA-TIME</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header class="brdbot">
+        <div>
+            <a href="./glavnaia.html"><img class="logo " src="./img/logo.png" alt="logo"></a>
+        </div>
+        <nav class="naliv">
+            <a href="./glavnaia.html"><p>Главная</p></a>
+            <a href="./index.html"><p>Каталог</p></a>
+            <a href="./Onas.html"><p>О нас</p></a>
+            <a href="./korZina.html"><p>Корзина</p></a>
+        </nav>
+        <div class="log">
+            <a href="#popup">login</a>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <div class="popup-title"><p>Вход</p></div>
+                        <a href="#" class="close-btn">&times;</a>
+                    </div>
+                    <div class="popup-body">
+                        <form action="./prof.html">
+                            <div class="form-group">
+                                <label for="email">Почта:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Пароль:</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Войти</button>
+                        </form>
+                        <form action="#popup2">
+                            <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup2" class="popup">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <div class="popup-title"><p>Регистрация</p></div>
+                        <a href="#" class="close-btn">&times;</a>
+                    </div>
+                    <div class="popup-body">
+                        <form action="#popup">
+                            <div class="form-group">
+                                <label for="email_reg">Почта:</label>
+                                <input type="email" id="email_reg" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password_reg1">Пароль:</label>
+                                <input type="password" id="password_reg1" name="password_reg1" required pattern=".{6,}">
+                            </div>
+                            <div class="form-group">
+                                <label for="password_reg2">Подтвердите пароль:</label>
+                                <input type="password" id="password_reg2" name="password_reg2" required pattern=".{6,}">
+                            </div>
+                            <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="gl glcol ">
+            <div class="glcol">
+                <h2>КОРЗИНА:</h2>
+                <div class="glcol glnas brd">
+                    <div class="glrow glw brd">
+                        <div class="glnas">
+                            <img class="kr" src="./img/Ylun.jpg" alt="ylun">
+                        </div>
+
+                        <div class="glak glnas">
+                            <p><b>Улун</b></p>
+                            <p>Ароматный полуферментированный чай с изысканным вкусом и тонким ароматом. Идеально сбалансирован между...</p>
+                        </div>
+
+                        <div>
+                            <p class="chen"><b>1388руб.</b></p>
+                            <label for=".kolvo">Количество:</label>
+                            <input class="kolvo" type="number" value="1" min="1">
+                        </div>
+                    </div>
+
+                    <div class="glrow glw brd">
+                        <div class="glnas">
+                            <img class="kr" src="./img/Puer.webp" alt="Pyer">
+                        </div>
+
+                        <div class="glak glnas">
+                            <p><b>Пуэр</b></p>
+                            <p>Традиционный китайский ферментированный чай с глубоким землистым вкусом и специфическим ароматом. Выдержан...</p>
+                        </div>
+
+                        <div>
+                            <p class="chen"><b>1388руб.</b></p>
+                            <label for=".kolvo">Количество:</label>
+                            <input class="kolvo" type="number" value="1" min="1">
+                        </div>
+                    </div>
+
+                    <div class="glrow glw brd">
+                        <div class="glnas">
+                            <img class="kr" src="./img/karkade.webp" alt="karkade">
+                        </div>
+
+                        <div class="glak glnas">
+                            <p><b>Королевский Каркаде</b></p>
+                            <p>Натуральный напиток из лепестков суданской розы с ярким рубиновым цветом и освежающим кисло-сладким вкусом...</p>
+                        </div>
+
+                        <div>
+                            <p class="chen"><b>1388руб.</b></p>
+                            <label for=".kolvo">Количество:</label>
+                            <input class="kolvo" type="number" value="1" min="1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="kacont ">
+            
+            <form id="zakaz" action="" method="post">
+                <label for="name">Имя:</label>
+                <input type="text" id="" name="name" placeholder="Иван Иванов" required>
+                
+                <label for="email">Email:(сюда отправим чек)</label>
+                <input type="email" id="" name="email" placeholder="ivan@example.com" required>
+                
+                <label for="phone">Телефон:</label>
+                <input type="text" id="" name="phone" placeholder="+7 (999) 123-45-67" required>
+                
+                <label for="address">Адрес доставки:</label>
+                <input type="text" class="zakad" id="" name="address" placeholder="г. Москва, ул. Ленина, д. 10, кв. 1" required>
+                <br><br>
+                <input type="button" value="Заказать">
+            </form>
+            
+        </div>
+        <br><br><br>
+    </main>
+
+    <footer>
+
+        <div>
+            <p>&copyВсе права не защищены</p>
+            <p><b>Великолепный Я</b>: +7 912 022-15-80</p>
+            <p>Лучший мужчина: +7 922 507-50-22</p>
+            <p>Топ 1 Ангела мид: +7 908 542-01-04</p>
+            <p>Жилец Шабердино: +7 993 530-96-16</p>
+            <p>Казанский Жабий: +7 964 184-81-87</p>
+
+            <div>
+                <a href="https://vk.com"><img class="slk" src="./img/Vk.png" alt="VK"></a>
+                <a href="https://web.telegram.org"><img class="slk" src="./img/Tg.png" alt="TG"></a>
+                <a href="https://www.ozon.ru"><img class="slk" src="./img/Ozon.png" alt="OZON"></a>
+            </div>
+        </div>
+
+        <div class="footphone">
+            <nav class="naliv2">
+                <a href="./glavnaia.html"><p>Главная</p></a>
+                <a href="./index.html"><p>Каталог</p></a>
+                <a href="./Onas.html"><p>О нас</p></a>
+                <a href="./korZina.html"><p>Корзина</p></a>
+            </nav>
+        </div>
+        <br><br><br>
+    </footer>
+</body>
+</html>

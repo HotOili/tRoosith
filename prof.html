@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA-TIME</title>
+    <link rel="stylesheet" href="./css/style.css">
+    
+</head>
+<body>
+    <header class="brdbot">
+        <div>
+            <a href="./glavnaia.html"><img class="logo " src="./img/logo.png" alt="logo"></a>
+        </div>
+        <nav class="naliv">
+            <a href="./glavnaia.html"><p>Главная</p></a>
+            <a href="./index.html"><p>Каталог</p></a>
+            <a href="./Onas.html"><p>О нас</p></a>
+            <a href="./korZina.html"><p>Корзина</p></a>
+        </nav>
+        <div class="log">
+            <a href="#popup">login</a>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <div class="popup-title"><p>Вход</p></div>
+                        <a href="#" class="close-btn">&times;</a>
+                    </div>
+                    <div class="popup-body">
+                        <form action="./prof.html">
+                            <div class="form-group">
+                                <label for="email">Почта:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Пароль:</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Войти</button>
+                        </form>
+                        <form action="#popup2">
+                            <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup2" class="popup">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <div class="popup-title"><p>Регистрация</p></div>
+                        <a href="#" class="close-btn">&times;</a>
+                    </div>
+                    <div class="popup-body">
+                        <form action="#popup">
+                            <div class="form-group">
+                                <label for="email_reg">Почта:</label>
+                                <input type="email" id="email_reg" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password_reg1">Пароль:</label>
+                                <input type="password" id="password_reg1" name="password_reg1" required pattern=".{6,}">
+                            </div>
+                            <div class="form-group">
+                                <label for="password_reg2">Подтвердите пароль:</label>
+                                 <input type="password" id="password_reg2" name="password_reg2" required pattern=".{6,}">
+                            </div>
+                            <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br><br>
+        <div>
+            <div class="kacont">
+                <img class="marat" src="./img/Marat.jpg" alt="img_klient">
+                <h2>Марат Шайтанович</h2>
+            </div>
+            
+            <div class="kacont kondan">
+                <h3>Контактные данные:</h3>
+                <form id="prof" action="">
+                    <input value="Иванов Марат Шайтанович" type="text">
+                    <br><br>
+                    <input value="+7 (777) 666-69-52" type="text">
+                    <br><br>
+                    <input value="maratshaitan45@gmail.com" type="email">
+                    <br>
+                    <input value="г.Москва, ул.Ленина, д.10, кв.1" type="text">
+                </form>
+            </div>
+        </div>
+            
+        <div>
+            <div class="profpod">
+                <div>
+                    <p class="zagal">ВАШИ ЗАКАЗЫ:</p>
+                    <a href="">Вы еще ничего не заказали</a>
+                </div>
+                <br>
+            </div>
+
+            <div class="profpod">
+                <div>
+                    <p class="zagal">СПОСОБЫ ОПЛАТЫ:</p>
+                    <a href="">Добавить способ оплаты</a>
+                </div>
+                <br>
+            </div>
+        </div>
+
+        <br><br><br>
+
+    </main>
+
+    <footer>
+
+        <div>
+            <p>&copyВсе права не защищены</p>
+            <p><b>Великолепный Я</b>: +7 912 022-15-80</p>
+            <p>Лучший мужчина: +7 922 507-50-22</p>
+            <p>Топ 1 Ангела мид: +7 908 542-01-04</p>
+            <p>Жилец Шабердино: +7 993 530-96-16</p>
+            <p>Казанский Жабий: +7 964 184-81-87</p>
+
+            <div>
+                <a href="https://vk.com"><img class="slk" src="./img/Vk.png" alt="VK"></a>
+                <a href="https://web.telegram.org"><img class="slk" src="./img/Tg.png" alt="TG"></a>
+                <a href="https://www.ozon.ru"><img class="slk" src="./img/Ozon.png" alt="OZON"></a>
+            </div>
+        </div>
+
+        <div class="footphone">
+            <nav class="naliv2">
+                <a href="./glavnaia.html"><p>Главная</p></a>
+                <a href="./index.html"><p>Каталог</p></a>
+                <a href="./Onas.html"><p>О нас</p></a>
+                <a href="./korZina.html"><p>Корзина</p></a>
+            </nav>
+        </div>
+        <br><br><br>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEA-TIME</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="brdbot">
+        <div>
+            <a href="../glavnaia.html"><img class="logo " src="../img/logo.png" alt="logo"></a>
+        </div>
+        <nav class="naliv">
+            <a href="../glavnaia.html"><p>Главная</p></a>
+            <a href="../index.html"><p>Каталог</p></a>
+            <a href="../Onas.html"><p>О нас</p></a>
+            <a href="../korZina.html"><p>Корзина</p></a>
+        </nav>
+        <div class="log">
+            <a href="#popup">login</a>
+        </div>
+    </header>
+
+    <main>
+        <div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <div class="popup-title"><p>Вход</p></div>
+                        <a href="#" class="close-btn">&times;</a>
+                    </div>
+                    <div class="popup-body">
+                        <form action="../prof.html">
+                            <div class="form-group">
+                                <label for="email">Почта:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Пароль:</label>
+                                <input type="password" id="password" name="password" required>
+                            </div>
+                            <button type="submit" class="submit-btn">Войти</button>
+                        </form>
+                        <form action="#popup2">
+                            <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="popup2" class="popup">
+                <div class="popup-content">
+                    <div class="popup-header">
+                        <div class="popup-title"><p>Регистрация</p></div>
+                        <a href="#" class="close-btn">&times;</a>
+                    </div>
+                    <div class="popup-body">
+                        <form action="#popup">
+                            <div class="form-group">
+                                <label for="email_reg">Почта:</label>
+                                <input type="email" id="email_reg" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password_reg1">Пароль:</label>
+                                <input type="password" id="password_reg1" name="password_reg1" required pattern=".{4,}">
+                            </div>
+                            <div class="form-group">
+                                <label for="password_reg2">Подтвердите пароль:</label>
+                                 <input type="password" id="password_reg2" name="password_reg2" required pattern=".{4,}">
+                            </div>
+                            <button type="submit" class="submit-btn">Зарегистрироваться</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+        <div class="otdst otdrow">
+            <div>
+                <img class="tovprof" src="../img/matcha.jpg" alt="">
+            </div>
+
+            <div class="pt">
+                <div class="otdcol">
+                    <h2 class="ch">Чай "Улун"</h2>
+                    <h2 class="chen ch">1388 руб.</h2> 
+                    <form action="">
+                        <input class="otdbtn" type="button" value="Добавить в корзину">
+                    </form>
+                </div>
+                
+                
+                <p>Улун (Oolong) — полуферментированный китайский чай, занимающий промежуточное положение между зеленым и черным чаем. Процесс производства включает частичную ферментацию листьев, что придает улунам разнообразные вкусы и ароматы, варьирующиеся от фруктовых и цветочных оттенков до орехово-кремовых нот.</p>
+
+                <h3>Полезные свойтсва:</h3>
+                <ul>
+                    <li><p>Поддержка потери весаБлагодаря уникальному химическому составу улун активизирует метаболические процессы, способствует расщеплению жиров и подавляет образование новых жировых отложений.</p></li>
+                    <li><p>Благотворное влияние на кожуБогатство антиоксидантами защищает кожу от преждевременного старения, сохраняя её молодой и здоровой.</p></li>
+                    <li><p>Профилактика диабетаПовышенное содержание полифенолов помогает стабилизировать уровень сахара в крови, делая улун полезным дополнением рациона диабетиков.</p></li>
+                    <li><p>Улучшение состояния зубовАнтибактериальные свойства чая препятствуют размножению вредных микроорганизмов в ротовой полости, снижают вероятность возникновения кариеса и воспалительных процессов десен.</p></li>
+                    <li><p>Нейтрализация свободных радикаловАнтиоксиданты, содержащиеся в улуне, нейтрализуют свободные радикалы, снижая риск хронических заболеваний и продлевая молодость организма.</p></li>
+                </ul>  
+            </div>
+            
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div>
+            <p>&copyВсе права не защищены</p>
+            <p>Великолепный Я: +7 912 022-15-80</p>
+            <p>Лучший мужчина: +7 922 507-50-22</p>
+            <p>Топ 1 Ангела мид: +7 908 542-01-04</p>
+            <p>Жилец Шаболдино: +7 993 530-96-16</p>
+            <p>Казанский стрелок: +7 964 184-81-87</p>
+
+            <div>
+                <a href="https://vk.com"><img class="slk" src="../img/Vk.png" alt="VK"></a>
+                <a href="https://web.telegram.org"><img class="slk" src="../img/Tg.png" alt="TG"></a>
+                <a href="https://www.ozon.ru"><img class="slk" src="../img/Ozon.png" alt="OZON"></a>
+            </div>
+        </div>
+
+        <div class="footphone">
+            <nav class="naliv2">
+                <a href="../glavnaia.html"><p>Главная</p></a>
+                <a href="../index.html"><p>Каталог</p></a>
+                <a href="../Onas.html"><p>О нас</p></a>
+                <a href="../korZina.html"><p>Корзина</p></a>
+            </nav>
+        </div>
+
+    </footer>
+</body>
+</html>
